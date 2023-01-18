@@ -17,7 +17,7 @@ router_v1.register(
     r'follow',
     FollowViewSet,
     basename='follow'
-    )
+)
 
 
 urlpatterns = [
