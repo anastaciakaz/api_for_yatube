@@ -6,15 +6,15 @@ from .views import CommentViewSet, GroupViewSet, PostViewSet, FollowViewSet
 app_name = 'api'
 
 router_v1 = DefaultRouter()
-router_v1.register(r'posts', PostViewSet)
-router_v1.register(r'groups', GroupViewSet)
+router_v1.register('posts', PostViewSet)
+router_v1.register('groups', GroupViewSet)
 router_v1.register(
     r'^posts/(?P<post_id>\d+)/comments',
     CommentViewSet,
     basename='comment'
 )
 router_v1.register(
-    r'follow',
+    'follow',
     FollowViewSet,
     basename='follow'
 )
