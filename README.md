@@ -1,64 +1,59 @@
 # YATUBE_API
-### Описание проекта
-Этот проект является API социальной сети Yatube.
-С помощью YATUBE_API можно просматривать посты, комментарии, а также создавать свои. Есть возможность следить за любимыми авторами, подписавшись на них, а также творить самому и обретать последователей и единомышленников.
-### Технологии
+### Project description
+This project is API for social networking website 'Yatube'.
 - Python 3.9.10
 - Django 3.2.14
 - djangorestframework 3.12.4
 - djangorestframework-simplejwt 4.7.2
-### Автор
-Казанина Анастасия
-### Инструкции по запуску
-1) Клонируйте репозиторий себе на компьютер, выполнив команду в терминале:
-
+### Instructions for working with this project
+1) Clone this repositoy to your PC with the following command in the terminal:
 ``` git clone https://github.com/anastaciakaz/api_final_yatube.git ```
-2) Откройте директорию с проектом и в терминале разверните виртуальное окружение проекта:
+2) Open the directory and activate virtual environment in the terminal:
 ```
 python -m venv venv
 ```
-3) Запустите виртуальное окружение:
+3) Activate virtual environment:
 ```
 source venv/Scripts/activate
 ```
-4) Обновите менеджер пакетов pip:
+4) Update pip:
 ```
 python -m pip install --upgrade pip
 ```
-5) Установите зависимости:
+5) Install requirements:
 ```
 pip install -r requirements.txt
 ``` 
-6) Выполните миграции:
+6) Run migrations:
 ```
 python manage.py migrate
 ```
-7) Запустите сервер:
+7) Run server:
 ```
 python manage.py runserver
 ```
-### Проект доступен по адресу 
+### Access to the project: 
 ```
 http://127.0.0.1:8000/api/v1/
 ```
-### Примеры запросов к API
-- Получить список всех постов (GET-запрос):
+### Examples of the requests to API:
+- The list of all posts (GET-request):
 ```
 http://127.0.0.1:8000/api/v1/posts/
 ```
-- Получить определенный пост (GET-запрос):
+- Certain post (GET-request):
 ```
 http://127.0.0.1:8000/api/v1/posts/1/
 ```
-- Получить список всех групп (GET-запрос):
+- The list of all groups (GET-request):
 ```
 http://127.0.0.1:8000/api/v1/groups/
 ```
-- Получить коментарии определенного поста (GET-запрос):
+- The list of all comments of a certain post (GET-request):
 ```
 http://127.0.0.1:8000/api/v1/posts/1/comments/
 ```
-- Создать новый пост (POST-запрос, необходима аутентификация JWT):
+- Create a new post (POST-request, JWT authentication is required):
 ```
 http://127.0.0.1:8000/api/v1/posts/
 ```
