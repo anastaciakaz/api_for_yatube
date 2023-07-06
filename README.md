@@ -7,7 +7,7 @@ This project is API for social networking website 'Yatube'.
 - djangorestframework-simplejwt 4.7.2
 ### Instructions for working with this project
 1) Clone this repositoy to your PC with the following command in the terminal:
-``` git clone https://github.com/anastaciakaz/api_final_yatube.git ```
+``` git@github.com:anastaciakaz/api_for_yatube.git ```
 2) Open the directory and activate virtual environment in the terminal:
 ```
 python -m venv venv
